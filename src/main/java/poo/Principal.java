@@ -5,6 +5,7 @@ public class Principal {
     public static int soma(int a, int b){
         return a + b;
     }
+    public static int subtracao(int a, int b) {return a - b;}
 
     public static void main(String[] args) {
 
@@ -19,6 +20,10 @@ public class Principal {
         switch (operador){
             case "+":
                 System.out.println("Resultado: " + soma(op1, op2));
+                break;
+
+            case "-":
+                System.out.println("Resultado: " + subtracao(op1, op2));
                 break;
             default:
                 System.out.println("Operador inválido");
